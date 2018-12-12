@@ -1,0 +1,286 @@
+.colors {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: center;
+
+	}
+
+	#green, #red, #blue, #orange, #lemon, #berry{
+	height: 350px;
+	width: 350px;
+	}
+
+#red:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%); 
+}
+
+#berry:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%); 
+}
+
+#lemon:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%); 
+}
+
+#orange:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%); 
+}
+#green:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%);
+  }
+  #blue:hover {
+	 -webkit-filter: grayscale(100%); 
+  filter: grayscale(0%);
+  }
+#red, #blue, #green, #lemon, #orange, #berry{
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(100%); 
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+#background{
+	display: block;
+	height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+  
+}
+#cat{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	top: -300px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+
+#dog {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 300px;
+	top: -500px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+#cat1{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 600px;
+	top: -300px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+#cat2{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 800px;
+	top: -400px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+
+#dog1{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 700px;
+	top: -600px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+#doggo{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 900px;
+	top: -650px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+#kat{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 100px;
+	top: -400px;
+	overflow: hidden;
+	animation-name: kitty;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+
+}
+
+
+@keyframes kitty
+{
+	from {
+		transform:translateY(-300px);	
+	}
+	to {
+		transform: translateY(1400px);
+	}
+}
+
+
+#iphone{
+	display: flex;
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	
+	
+}
+#screen{
+position: absolute;
+height: 276px;
+width: 162px;
+left: 119px;
+top: 56px;
+transition-timing-function: ease-in-out;
+transition-duration: 0.5s;
+opacity: 0;
+
+}
+
+#iphone:hover{
+	z-index:-1;
+	
+}
+
+.iphone-wrapper {
+	position: relative;
+}
+
+.iphone-wrapper:hover #screen {
+	opacity: 1;
+}
+
+@keyframes rainboww {
+
+  14%   {background-color: red;}
+  28%  {background-color: orange;}
+  42%  {background-color: yellow;}
+  56% {background-color: green;}
+  70%{background-color: blue;}
+  84%{background-color: indigo;}
+  99%{background-color: violet;}
+  
+}
+
+#rainbow{
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+	position: center;
+	background-color: pink;
+	border-color: black;
+	border:20px;
+	animation-name: rainboww;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	z-index: -1;
+	
+}
+
+
+
+#text{
+	font-size: 200px;
+	z-index: 3;
+	color:white;
+	opacity: 0.15;
+	text-align: center;
+
+}
+#goodbye{
+	background-color: yellow;
+}
+
+#hello {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  font-size: 200px;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+  from{
+  	margin-left: 0%;
+  	width:100%;
+  }
+  to{
+  	margin-left: 100%;
+  	width: 300%;
+  }
+}
+ 
+
+
+
+
+
+

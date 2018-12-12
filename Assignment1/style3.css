@@ -1,0 +1,19 @@
+body
+{
+
+background-color: white;
+
+}
+p{
+	font-family:'Montserrat', sans-serif;
+	color:black;
+	text-align: center;
+}
+a{
+	font-family: 'Notable', sans-serif;
+	color:black;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16%;
+}

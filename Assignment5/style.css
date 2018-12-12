@@ -1,0 +1,15 @@
+.pics{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	flex-wrap: wrap;
+	padding:0px;
+	flex-basis: min-content;
+	margin: 0px;
+	align-content: center;
+	align-items: center;
+	
+} 
+#first, #second, #third, #fourth{
+	width:500px;
+}
