@@ -1,3 +1,89 @@
+/* to prevent a hidden element from getting in the way of click events
+  use "pointer-events: none" on the element
+  https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+*/
+/*
+.border{
+  z-index: 100;
+  list-style: none;
+  position: fixed;
+  text-align: center;
+  background: black;
+ width: 100vw;
+ height: 20px;
+
+  margin: -20px;
+  padding: 0px;
+
+}*/
+.link1{
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    line-height: 27px;
+   width: 100vh;
+    top: 100vh;
+    background-color: black;
+    color: #fbfbfa;
+    text-align: center;
+    padding: -20px;
+   left: 0;
+   font-family: 'Inconsolata', monospace;
+   z-index: 200;
+
+}
+.link2{
+  position: fixed;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    right: 0;
+    line-height: 27px;
+   width: 100vh;
+    top: 100vh;
+    background-color: black;
+    color: #fbfbfa;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    z-index: 200;
+   
+}
+.link3{
+   position: fixed;
+    top:0vh;
+    width: 100vw;
+    height:18px;
+   z-index: 12;
+    background-color: black;
+    color: #fbfbfa;
+    text-align: center;
+    z-index: 200;
+
+   
+ 
+}
+.link4{
+   position: fixed;
+   bottom:0vh;
+    width: 100vw;
+    height:18px;
+   z-index: 12;
+    background-color: black;
+    color: #fbfbfa;
+    text-align: center;
+    z-index: 200;
+   
+ 
+}
+#linkcolor{
+  color: #fbfbfa;
+  text-decoration: none;
+
+}
+#linkcolor:visited{
+  color: #fbfbfa;
+}
+    
+
 
 
 .pics{
@@ -7,21 +93,58 @@
 	flex-wrap: wrap;
 	padding:0px;
 	flex-basis: min-content;
-	margin: -7px;
+	margin: 12px;
 	align-content: space-around;
   flex-grow: 2;
-
-
+  z-index: 1;
 
 }
 
 #first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth{
-	width:370px;
-	
+	width:30vw;
+  min-width: 405px;
+  opacity: 0;
+
 
 }
 
+#first {
+  transition: opacity 1s ease-in;
+  
+}
 
+#second {
+  transition: opacity 1s ease-in;
+
+}
+#third {
+  transition: opacity 1s ease-in;
+
+}
+#fourth {
+  transition: opacity 1s ease-in;
+
+}
+#fifth {
+  transition: opacity 1s ease-in;
+
+}
+#sixth {
+  transition: opacity 1s ease-in;
+
+}
+#seventh {
+  transition: opacity 1s ease-in;
+
+}
+#eighth {
+  transition: opacity 1s ease-in;
+
+}
+#ninth {
+  transition: opacity 1s ease-in;
+
+}
 
 .show{
 	display: none;
@@ -114,17 +237,6 @@
 
 }
 
-/*@keyframes rainboww {
-
-  14%   {background-color: #FF7373;}
-  28%  {background-color: #FFD17A;}
-  42%  {background-color: #EAFF80;}
-  56% {background-color: #A9FF9E;}
-  70%{background-color: #96F1FF;}
-  84%{background-color:#9698FF;}
-  99%{background-color: #F694FF;}
-  
-}*/
 
 #background{
   position: fixed;
@@ -134,9 +246,6 @@
     min-height: 100%;
 	z-index: -20;
 }
-
-
-
 
 
 
@@ -158,6 +267,7 @@
     transition-timing-function: ease-in-out;
     opacity: 0;
     animation-fill-mode: forwards;
+    z-index: 30;
 
 }
 
@@ -166,7 +276,201 @@
 	90%{left:-110%;}
   100%{left: -120%;}
   }
-	
+
+
+
+  #filmsign1{
+  position: absolute;
+ width: 30vw;
+ max-height: 400px;
+ top: 50px;
+ right: 650px;
+ opacity: 0;
+ pointer-events: none;
+ 
+  }
+  #filmsign2{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 125px;
+ right: 400px;
+ opacity: 0;
+ pointer-events: none;
+ 
+
+    
+  }
+  #filmsign3{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 300px;
+ right: 400px;
+ opacity: 0;
+ pointer-events: none;
+
+
+    
+  }
+  #filmsign4{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 225px;
+ right: 600px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #filmsign5{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 50px;
+ right: 200px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #filmsign6{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 225px;
+ right: 850px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #filmsign7{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 225px;
+ right: 100px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #filmsign8{
+  position: absolute;
+ width: 30vw;
+ min-width: : 400px;
+ max-width: : 400px;
+ top: 400px;
+ right: 200px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+
+
+  #smoke1{
+  position: absolute;
+ width: 30vw;
+ max-height: 400px;
+ top: 50px;
+ right: 650px;
+ opacity: 0;
+ pointer-events: none;
+ 
+  }
+  #smoke2{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 125px;
+ right: 400px;
+ opacity: 0;
+ pointer-events: none;
+ 
+
+    
+  }
+  #smoke3{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 350px;
+ right: 850px;
+ opacity: 0;
+ pointer-events: none;
+
+
+    
+  }
+  #smoke4{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 225px;
+ right: 600px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #smoke6{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 50px;
+ right: 200px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+ 
+   #smoke7{
+  position: absolute;
+ width: 30vw;
+  max-height: 400px;
+ top: 225px;
+ right: 100px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+   #smoke8{
+  position: absolute;
+ width: 30vw;
+ min-width: : 400px;
+ max-width: : 400px;
+ top: 450px;
+ right: 200px;
+ opacity: 0;
+ pointer-events: none;
+  
+  }
+
+.artistss{
+  background-color: black;
+}
+  #artists{
+    
+    color:#fbfbfa ;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+#artistsbackground{
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  z-index: -20;
+}
+#header{
+  color:#fbfbfa ;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+
 
    
 
